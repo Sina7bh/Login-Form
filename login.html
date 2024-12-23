@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="out">
+        <!-- ********************************* LOG-In ******************************** -->
+
+        <img src="/a2.png" alt="" class="eye" />
+
+        <div class="tab">
+          <input type="radio" name="radio" id="radioA" checked />
+          <label for="radioA" class="radioA label">Log-In</label>
+          <div class="content">
+            <form id="loginForm">
+              <label for="username">Email:</label>
+              <input
+                type="text"
+                class="username"
+                placeholder="Please Enter Your EMAIL"
+              /><br />
+
+              <label for="password">PassWord:</label>
+              <input
+                type="password"
+                class="password"
+                placeholder="Please Enter Your PASSWORD"
+              /><br />
+
+              <input type="button" value="Login" onclick="loginR()" />
+            </form>
+            <p class="haveAcc">Do not have Account? Please Sign-In.</p>
+          </div>
+        </div>
+
+        <!-- ******************************* SIGN_IN ******************************* -->
+        <div class="tab">
+          <input type="radio" name="radio" id="radioB" />
+          <label for="radioB" class="radioB label">Sign-In</label>
+          <div class="content">
+            <form id="loginForm">
+              <label for="username">ID:</label>
+              <input
+                type="text"
+                id="username"
+                placeholder="Please Enter Your ID"
+              /><br />
+
+              <label for="email">Email:</label>
+              <input
+                type="text"
+                id="email"
+                placeholder="Please Enter Your EMAIL"
+              /><br />
+
+              <label for="password">PassWord:</label>
+              <input
+                type="password"
+                id="password"
+                placeholder="Please Enter Your PASSWORD"
+              /><br />
+              <label for="phone">Phone:</label>
+              <input
+                type="text"
+                id="phone"
+                placeholder="Please Enter Your PHONE number"
+              /><br />
+
+              <input type="button" value="Continue" onclick="signUp()" />
+            </form>
+          </div>
+        </div>
+      </div>
+
+     
+      <div id="errorContainer" class="error-container err"></div>
+
+ 
+      <div id="successMessage" class="success-message err">
+        Action completed successfully.
+      </div>
+    </div>
+
+    <script src="login.js"></script>
+  </body>
+</html>
